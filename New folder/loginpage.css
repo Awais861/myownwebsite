@@ -1,0 +1,198 @@
+var {
+    --primary-color: #e68619;
+    --secondary-color: #4caf50;
+    --background-gradient: linear-gradient(180deg, rgba(230, 134, 25, 0.514), white);
+    --form-gradient: linear-gradient(90deg, maroon, oklab(70.502% 0.12536 -0.08144));
+    --form-hover-shadow: inset -30px -30px 0.2px darkgreen;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(230, 134, 25, 0.514), white);
+    background-attachment: fixed;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#valent {
+    border: 0.5px solid rgba(230, 134, 25, 0.514);
+    margin-top: 80px;
+    z-index: 2;
+}
+
+#aside-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    border-right: 0.5px solid rgba(230, 134, 25, 0.514);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#aside-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    border-left: 0.5px solid rgba(230, 134, 25, 0.514);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.div-form {
+    align-self: center;
+    display: flex;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background: linear-gradient(90deg, maroon, oklab(70.502% 0.12536 -0.08144));
+    animation: up 1.5s infinite;
+    border-radius: 20px;
+}
+
+.div-form:hover {
+    animation-play-state: paused;
+}
+
+.img-j {
+    align-items: center;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.form-1 h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.form-1 img {
+    margin-bottom: 10px;
+    height: 50px;
+    animation: up 1.5s infinite;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(1px);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+}
+
+.form-1 h1,
+img {
+    display: block;
+    align-self: center;
+}
+
+.form-1 {
+    width: 40vh;
+    height: 40vh;
+    display: block;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    background: linear-gradient(135deg, yellow, darkgreen);
+    border: 0.5px solid white;
+    border-radius: 30px;
+    border-bottom: 5px;
+    box-shadow: 5px 5px 0.6px darkgreen;
+}
+
+.form-1:hover {
+    box-shadow: 5px 5px 1px darkgreen;
+}
+
+input {
+    align-self: center;
+    display: block;
+    border: 0.58px solid rgb(162, 255, 55);
+    padding-top: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: 8vh;
+}
+
+input[type] {
+    color: black;
+    font-size: 18px;
+}
+
+#checkbox {
+    margin-top: 0;
+    margin-top: 10px;
+}
+
+input::placeholder {
+    align-self: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons {
+    gap: 60px;
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.buttons button {
+    height: 30px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.buttons button:hover {
+    box-shadow: inset -30px -30px 0.2px darkgreen;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+p {
+    text-align: center;
+    align-self: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#login-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1.5px solid rgba(230, 134, 25, 0.514);
+    margin-top: 20px;
+    display: block;
+    align-self: center;
+    justify-content: center;
+    height: 80px;
+}

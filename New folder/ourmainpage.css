@@ -1,0 +1,223 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-bottom: 0.5px solid black;
+}
+
+#form-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+#form-container #form-head {
+    float: right;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+#form-container #form-head input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    width: 300px;
+    background-color: rgb(173, 166, 166);
+}
+
+#form-container #form-head input::placeholder {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form-container #form-head input::placeholder:hover {
+    color: rgb(255, 255, 255);
+}
+
+#form-container #form-head button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(187, 88, 7);
+    color: white;
+    cursor: pointer;
+}
+
+#img-logo {
+    position: fixed;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    margin-top: 5px;
+}
+
+#img-logo #arts-z {
+    display: block;
+    height: 80px;
+    margin: 0;
+    border-right: 1.5px solid black;
+    margin-bottom: 3px;
+}
+
+#top-border {
+    margin-left: 160px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+}
+
+#top-border ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    margin-left: 20px;
+}
+
+#top-border ul li {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+#top-border ul li:hover {
+    cursor: pointer;
+}
+
+#top-border ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#top-border ul li a:hover {
+    transition: 0.3s ease-in-out;
+    color: rgb(187, 88, 7);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-top: 3px solid black;
+    backdrop-filter: blur(10px);
+}
+
+.highlight {
+    color: rgb(187, 88, 7);
+    font-weight: bold;
+}
+
+.main-container {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+    margin: auto 60px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    width: 400px;
+    height: fit-content;
+}
+
+.main-container h1 {
+    align-self: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    backdrop-filter: blur(10px);
+}
+
+.main-container p {
+    font-family: 'Smooch Sans', sans-serif;
+    align-self: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+#footer-main {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+footer .social-icons {
+    width: 498px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+footer .social-icons p {
+    align-self: center;
+    color: black;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer .social-icons a {
+    cursor: pointer;
+}
+
+footer .social-icons img {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+footer .social-icons img:hover {
+    filter: brightness(0.8);
+    transition: 0.3s ease-in-out;
+    height: 22px;
+}
+
+footer p {
+    align-self: center;
+    color: rgb(2, 0, 0);
+    font-weight: bold;
+}

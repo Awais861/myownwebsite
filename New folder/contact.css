@@ -1,0 +1,202 @@
+body {
+    --primary-color: #e68619;
+    margin: 0;
+}
+
+.about-container {
+    background-color: rgba(236, 201, 201, 0.8);
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    display: block;
+}
+
+.about-container h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about-container p {
+    color: black;
+    font-family: 'Smooch Sans', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.questions-form {
+    display: inline-block;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    margin: auto 60px;
+    background-color: rgba(194, 181, 181, 0.8);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.questions-form h2 {
+    display: inline-block;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+.question-form #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 2px solid rgb(173, 166, 166);
+    border-radius: 4px;
+    font-family: 'Smooch Sans', sans-serif;
+    border-radius: 20px;
+}
+
+#contact-form input:hover,
+#contact-form textarea:hover {
+    border-color: rgb(196, 140, 94);
+}
+
+#contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(196, 140, 94);
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#contact-form button:hover {
+    background-color: rgb(187, 88, 7);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 150px;
+}
+
+.footer-container {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: rgb(173, 166, 166);
+}
+
+.footer-container #newsletter-form {
+    margin-top: 10px;
+    display: block;
+    gap: 10px;
+}
+
+.footer-container #newsletter-form input[type="email"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-container #newsletter-form input:hover {
+    background-color: rgb(196, 140, 94);
+}
+
+.footer-container #newsletter-form input[type="email"] ::placeholder {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container #newsletter-form input[type="email"] ::placeholder:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footer-container #newsletter-form button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(196, 140, 94);
+    color: white;
+    cursor: pointer;
+}
+
+.footer-container #newsletter-form button:hover {
+    background-color: rgb(187, 88, 7);
+}
+
+label {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .social-icons {
+    width: 498px;
+    height: 30px;
+    background-color: rgb(173, 166, 166);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+footer .social-icons p {
+    align-self: center;
+    color: black;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer .social-icons a {
+    cursor: pointer;
+}
+
+footer .social-icons img {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+footer .social-icons img:hover {
+    filter: brightness(0.8);
+    transition: 0.3s ease-in-out;
+    height: 22px;
+}
+
+.footer-container p {
+    align-self: center;
+    color: rgb(192, 190, 190);
+}
